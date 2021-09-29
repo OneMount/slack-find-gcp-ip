@@ -43,7 +43,6 @@ $ export project_id="{example-project}"
 $ export function_name="{function_name}"
 $ export region="{region}"
 $ export service_account="{service_account}"
-$ cd cloud-function
 $ gcloud functions deploy ${function_name} --runtime python37 --trigger-http --region ${region} --env-vars-file=./env.yaml --service-account=${service_account} --project ${project_id}
 ```
 
