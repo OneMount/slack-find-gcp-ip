@@ -47,4 +47,3 @@ def slack_find_ip(request):
     except Exception as error:
         utils.log(error)
         return utils.build_error_response(error)
-

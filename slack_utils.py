@@ -3,6 +3,7 @@ import requests
 import utils
 import secret_utils
 
+
 def post_message_to_slack(channel, thread, text):
     if not thread:
         return requests.post('https://slack.com/api/chat.postMessage', {
